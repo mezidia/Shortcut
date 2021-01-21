@@ -1,0 +1,13 @@
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.exe
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.deps.json
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.runtimeconfig.json
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.runtimeconfig.dev.json
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.dll
+D:\GH\Shortcut\Shortcut\bin\Debug\netcoreapp3.1\Shortcut.pdb
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.csprojAssemblyReference.cache
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.AssemblyInfoInputs.cache
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.AssemblyInfo.cs
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.csproj.CoreCompileInputs.cache
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.dll
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.pdb
+D:\GH\Shortcut\Shortcut\obj\Debug\netcoreapp3.1\Shortcut.genruntimeconfig.cache
