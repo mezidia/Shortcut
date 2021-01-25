@@ -9,13 +9,14 @@ namespace Shortcut
         static async Task Main(string[] args)
         {
             var client = new HttpClient();
+            string key = Environment.GetEnvironmentVariable("X-RAPIDAPI-KEY");
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/397/distance?toCityId=408"),
                 Headers =
                 {
-                    { "x-rapidapi-key", "2ffecdcd93msh93292245ad8c723p1692fbjsna9d303ed7f73" },
+                    { "x-rapidapi-key", key },
                     { "x-rapidapi-host", "wft-geo-db.p.rapidapi.com" },
                 },
             };
