@@ -8,8 +8,12 @@ namespace Shortcut
     {
         static async Task Main(string[] args)
         {
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
+            Console.Write("Enter cities: ");
+            string cities = Console.ReadLine();
+            string[] citiesList = cities.Split(", ");
+            Console.WriteLine($"{citiesList[0]} - {citiesList[1]}");
+            HttpClient client = new HttpClient();
+            HttpRequestMessage request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/397/distance?toCityId=408"),
