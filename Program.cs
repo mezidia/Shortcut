@@ -8,6 +8,7 @@ namespace Shortcut
     {
         static async Task Main(string[] args)
         {
+            string key = Environment.GetEnvironmentVariable("X-RAPIDAPI-KEY");
             Console.Write("Enter cities: ");
             string cities = Console.ReadLine();
             string[] citiesList = cities.Split(", ");
@@ -19,7 +20,7 @@ namespace Shortcut
                 RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/397/distance?toCityId=408"),
                 Headers =
                 {
-                    { "x-rapidapi-key", "2ffecdcd93msh93292245ad8c723p1692fbjsna9d303ed7f73" },
+                    { "x-rapidapi-key", key },
                     { "x-rapidapi-host", "wft-geo-db.p.rapidapi.com" },
                 },
             };
