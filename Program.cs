@@ -17,7 +17,7 @@ namespace Shortcut
             HttpRequestMessage request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/397/distance?toCityId=408"),
+                RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/200/distance?distanceUnit=KM&toCityId=300"),
                 Headers =
                 {
                     { "x-rapidapi-key", key },
