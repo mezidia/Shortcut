@@ -14,21 +14,20 @@ namespace Shortcut
             string[] citiesList = cities.Split(", ");
             Console.WriteLine($"{citiesList[0]} - {citiesList[1]}");
             HttpClient client = new HttpClient();
-            HttpRequestMessage request = new HttpRequestMessage
+            for (int i = 0; i < citiesList.Length; i++)
             {
-                Method = HttpMethod.Get,
-                RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/200/distance?distanceUnit=KM&toCityId=300"),
-                Headers =
+                string uri = String.Format("https://api.opencagedata.com/geocode/v1/json?q={0}&key={1}&language=en&pretty=1&no_annotations=1", citiesList[i], key);
+                HttpRequestMessage request = new HttpRequestMessage
                 {
-                    { "x-rapidapi-key", key },
-                    { "x-rapidapi-host", "wft-geo-db.p.rapidapi.com" },
-                },
-            };
-            using (var response = await client.SendAsync(request))
-            {
-                response.EnsureSuccessStatusCode();
-                var body = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(body);
+                    Method = HttpMethod.Get,
+                    RequestUri = new Uri(uri),
+                };
+                using (var response = await client.SendAsync(request))
+                {
+                    response.EnsureSuccessStatusCode();
+                    var body = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(body);
+                }
             }
         }
     }
