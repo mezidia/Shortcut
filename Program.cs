@@ -16,8 +16,14 @@ namespace Shortcut
             HttpClient client = new HttpClient();
             for (int i = 0; i < citiesList.Length; i++)
             {
+<<<<<<< Updated upstream
                 string uri = String.Format("https://api.opencagedata.com/geocode/v1/json?q={0}&key={1}&language=en&pretty=1&no_annotations=1", citiesList[i], key);
                 HttpRequestMessage request = new HttpRequestMessage
+=======
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://wft-geo-db.p.rapidapi.com/v1/geo/cities"),
+                Headers =
+>>>>>>> Stashed changes
                 {
                     Method = HttpMethod.Get,
                     RequestUri = new Uri(uri),

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Shortcut": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Ключ": "Значение",
+        "X-RAPIDAPI-KEY": "2ffecdcd93msh93292245ad8c723p1692fbjsna9d303ed7f73"
+      }
+    }
+  }
+}
