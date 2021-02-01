@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const img = document.getElementById('image');
+const canvasjs = document.getElementById('canvas');
+const ctx = canvasjs.getContext('2d');
 
-// Write your JavaScript code.
+canvas.width = 400
+canvas.height = 300;
+
+img.onload = function () {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+}
